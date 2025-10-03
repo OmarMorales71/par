@@ -8,7 +8,7 @@
         (inc ?p ?pp)
         (dec ?p ?pp)
     )
-    (:action move-up
+    (:action move-down
         :parameters (?t ?x ?y ?y1)
         :precondition (and 
             (tile ?t)
@@ -24,7 +24,7 @@
             (not (blank ?x ?y1))
         )
     )
-    (:action move-down
+    (:action move-up
         :parameters (?t ?x ?y ?y1)
         :precondition (and
             (tile ?t)
